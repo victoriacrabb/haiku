@@ -1,0 +1,175 @@
+h1{
+	color: #403D90;
+	font-family: Lust;
+	font-size: 100px;
+	text-align: left;
+	position: absolute;
+	left: 550px;
+	top: 20px;
+	transform: scale(1);
+	opacity: 1;
+	animation-name: fadein;
+	animation-duration: 6s;
+	animation-direction: forwards;
+	z-index: 40;
+}
+p{
+	color: white;
+	font-family: Lust;
+	font-size: 100px;
+	text-align: left;
+	position: absolute;
+	left: 950px;
+	top: 255px;
+	transform: translateY(750px);
+	opacity: 1;
+	animation-name: falling;
+	animation-duration: 4s;
+	animation-direction: forwards;
+	z-index: 40;
+}
+h2{
+	color: black;
+	font-family: Georgia;
+	font-size: 19px;
+	text-align: center;
+	position: relative;
+	top: 40px;
+}
+
+h3{
+	color: #9CAF88;
+	font-family: Georgia;
+	text-align: center;
+	position: relative;
+	top: 40px;
+}
+
+.container {
+	width: 1445px;
+	height: 750px; 
+	background-image: linear-gradient( 268.6deg, rgba(250, 218, 221,1) 35.7%, rgba(229,223,239,1) 80.2% );
+	overflow: hidden;
+}
+
+.shape3{
+  position: absolute;
+  display: block;
+  width: 400px;
+  height: 200px;
+  left: 50px;
+  top: 90px;
+ transform: translateY(750px);
+	opacity: 1;
+	animation-name: falling;
+	animation-duration: 4s;
+	animation-direction: forwards;
+  background: white;
+  border-radius: 41% 59% 41% 59% / 43% 45% 55% 57%;
+  animation-direction: forwards;
+  z-index: 30;
+}
+
+.first{
+	position: absolute;
+	left:50px;
+	top: 205px;
+}
+
+.second{
+	position: absolute;
+	left:500px;
+	top: 625px;
+}
+.third{
+	position: absolute;
+	left:1100px;
+	top: 125px;
+}
+
+.cloud1{
+	width: 500px;
+	height: 250px;
+	position: absolute;
+	left:20px;
+	top: 100px;
+	transform: translateX(700px);
+	opacity: 1;
+	animation-name: rightclouds;
+	animation-duration: 8s;
+	animation-direction: forwards;
+	overflow: hidden;
+	z-index: 20;
+}
+.cloud2{
+	width: 500px;
+	height: 250px;
+	position: absolute;
+	left: 950px;
+	top: 255px;
+	transform: translateX(-950px);
+	opacity: 1;
+	animation-name: leftclouds;
+	animation-duration: 8s;
+	animation-direction: forwards;
+	overflow: hidden;
+	z-index: 20;
+}
+.cloud3{
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	left:375px;
+	top: 500px;
+	transform: translateX(700px);
+	opacity: 1;
+	animation-name: rightclouds;
+	animation-duration: 8s;
+	animation-direction: forwards;
+	overflow: hidden;
+	z-index: 20;
+}
+
+@keyframes fadein{
+	0%{
+		transform: scale(1);
+		opacity: 0;
+	}
+	100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+@keyframes rightclouds{
+	0%{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(700px);
+		opacity: 1;
+	}
+}
+@keyframes leftclouds{
+	0%{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(-950px);
+		opacity: 1;
+		
+	}
+}
+@keyframes falling{
+	0%{
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(750px);
+		opacity: 1;
+		
+	}
+}
+}

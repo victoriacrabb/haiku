@@ -1,0 +1,246 @@
+h1{
+	color: white;
+	font-family: Lust;
+	font-size: 100px;
+	text-align: left;
+	position: absolute;
+	left: 950px;
+	top: 255px;
+	z-index: 40;
+}
+h3{
+	color: black;
+	font-family: Georgia;
+	text-align: center;
+	position: relative;
+	top: 40px;
+}
+p{
+	color: #FF1493;
+	font-family: Georgia;
+	text-align: center;
+	font-size: 19px;
+	position: relative;
+	top: 20px;
+	animation-name: fade;
+  	animation-duration: 2s;
+  	animation-delay: 5ms;
+}
+
+.container {
+	width: 1445px;
+	height: 750px; 
+	background-color: #061527;
+	overflow: hidden;
+}
+
+.shape2{
+  position: absolute;
+  display: block;
+  width: 450px;
+  height: 250px;
+  left: 1000px;
+  top: 280px;
+  transform: scale(0.1);
+	opacity: 0;
+  background: pink;
+  border-radius: 41% 59% 41% 59% / 43% 45% 55% 57%;
+  animation-name: fadeout;
+  animation-duration: 5s;
+  animation-delay: 5ms;
+  animation-direction: forwards;
+  z-index: 20;
+}
+
+.shape3{
+  position: absolute;
+  display: block;
+  width: 400px;
+  height: 200px;
+  left: 50px;
+  top: 90px;
+  transform: scale(1);
+	opacity: 1;
+	animation-name: clouds;
+	animation-duration: 6s;
+	animation-direction: forwards;
+  background: white;
+  border-radius: 41% 59% 41% 59% / 43% 45% 55% 57%;
+  animation-direction: forwards;
+  z-index: 30;
+}
+
+.golden{
+	width: 500px;
+	height: 550px;
+	position: absolute;
+	left: 250px;
+	top: 215px;
+	overflow: hidden;
+	transform: scale(0.1)translateY(750px);
+	opacity: 0;
+	animation-name: fadesout;
+	animation-duration: 5s;
+	animation-direction: forwards;
+	z-index: 10;
+}
+.star1{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left:50px;
+	top: 200px;
+	transform: scale(1.2) translate(500px);
+	opacity: 0;
+	animation-name: movingstars;
+	animation-duration: 6s;
+	animation-delay: 30ms;
+	z-index: 20;
+}
+.star2{
+	width: 85px;
+	height: 85px;
+	position: absolute;
+	left:470px;
+	top: 40px;
+	transform: scale(1.2) translate(500px);
+	opacity: 0;
+	animation-name: movingstars;
+	animation-duration: 6s;
+	animation-delay: 30ms; 
+	z-index: 20;
+}
+.star3{
+	width: 75px;
+	height: 100px;
+	position: absolute;
+	left:1100px;
+	top: 150px;
+	transform: scale(1.2) translate(500px);
+	opacity: 0;
+	animation-name: movingstars;
+	animation-duration: 6s;
+	animation-delay: 30ms;
+}
+.star4{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left:95px;
+	top: 680px;
+	transform: scale(1.2) translate(500px);
+	opacity: 0;
+	animation-name: movingstars;
+	animation-duration: 6s;
+	animation-delay: 30ms;
+	z-index: 20;
+}
+.star5{
+	width: 75px;
+	height: 100px;
+	position: absolute;
+	left:750px;
+	top: 200px;
+	transform: scale(1.2) translate(500px);
+	opacity: 0;
+	animation-name: movingstars;
+	animation-duration: 6s;
+	animation-delay: 30ms;
+	overflow: hidden;
+	z-index: 20;
+}
+.star6{
+	width: 75px;
+	height: 100px;
+	position: absolute;
+	left:900px;
+	top: 600px;
+	transform: scale(1.2) translate(500px);
+	opacity: 0;
+	animation-name: movingstars;
+	animation-duration: 6s;
+	animation-delay: 30ms;
+	overflow: hidden;
+	z-index: 20;
+}
+.cloud1{
+	width: 500px;
+	height: 250px;
+	position: absolute;
+	left:20px;
+	top: 100px;
+	transform: scale(1);
+	opacity: 1;
+	animation-name: clouds;
+	animation-duration: 6s;
+	animation-direction: forwards;
+	z-index: 20;
+}
+.cloud2{
+	width: 500px;
+	height: 250px;
+	position: absolute;
+	left: 950px;
+	top: 255px;
+	transform: scale(1);
+	opacity: 1;
+	animation-name: clouds;
+	animation-duration: 6s;
+	animation-direction: forwards;
+	z-index: 20;
+}
+.cloud3{
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	left:375px;
+	top: 500px;
+	transform: scale(1);
+	opacity: 1;
+	animation-name: clouds;
+	animation-duration: 6s;
+	animation-direction: forwards;
+	z-index: 20;
+}
+
+@keyframes movingstars{
+	0%{
+		transform: scale(0.1);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1.2) translate(500px);
+		opacity: 0;
+	}
+}
+@keyframes fadeout{
+	0%{
+		transform: scale(1);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+}
+@keyframes fadesout{
+	0%{
+		transform: scale(1) translateY(0px);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(0.1)translateY(750px);
+		opacity: 0;
+	}
+}
+@keyframes clouds{
+	0%{
+		transform: scale(0.1);
+		opacity: 0;
+	}
+	100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+}

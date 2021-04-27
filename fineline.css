@@ -1,0 +1,82 @@
+h1{
+	color: #ff7f50;
+	font-family: Lust;
+	font-size: 100px;
+	text-align: left;
+	position: absolute;
+	left: 300px;
+	top: 500px;
+	z-index: 40;
+}
+h3{
+	color: #F6BE00;
+	font-family: Georgia;
+	text-align: left;
+	position: relative;
+	top: 40px;
+	z-index: 30;
+}
+
+.container{
+	width: 1445px;
+	height: 750px; 
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #FAFAD2;
+	z-index: 20;
+	overflow: hidden;
+}
+
+.one{
+	position: absolute;
+	top: 230px;
+	left: 1100px;
+	z-index: 40;
+}
+.two{
+	position: absolute;
+	top: 280px;
+	left: 1100px;
+	z-index: 40;
+}
+.three{
+	position: absolute;
+	top: 330px;
+	left: 1100px;
+	z-index: 40;
+}
+
+.image1{
+	width: 550px;
+	height: 800px;
+	z-index: 50;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.image2{
+	width: 550px;
+	height: 800px;
+	z-index: 50;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateY(750px);
+	opacity: 0;
+	animation-name: falling;
+	animation-duration: 10s;
+}
+
+@keyframes falling{
+	0%{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+	100%{
+		transform: translateX(750px);
+		opacity: 0;	
+	}
+}
+}
